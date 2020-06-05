@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ScrewDriver</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="BlueHawaii.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <a href="MainPage.html">
+        <svg
+          class="mybackbutton bi bi-chevron-left"
+          width="4em"
+          height="4em"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+          />
+        </svg>
+      </a>
+      <h1 class="navbar-text center" style="padding-top: 2rem;">
+        Screw Driver
+      </h1>
+      <p class="navbar-text pull-right" style="padding-top: 2rem;">
+        <button type="button" class="btn" id="heart">♡</button>
+      </p>
+      <!--
+      <p class="navbar-text pull-right" style="padding-top: 2rem;">
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-heart"></span> ♡
+        </a>
+      </p>    
+      <label class="navbar-text pull-right" style="padding-top: 2rem;">
+        <input type="checkbox" value="remember-me" /> Interested
+      </label>
+      -->
+    </nav>
+
+    <div class="centerofpage">
+      <img
+        class="myImage"
+        alt="Image html"
+        width="90%"
+        height="90%"
+        src="./Images/screw_driver.jpg"
+      />
+      <p class="myText">
+        More like orange juice than alcohol
+      </p>
+      <div class="mypadding">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#qwe">DETAIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#asd">SIMILAR TASTE</a>
+          </li>
+        </ul>
+        <!--재료 선택 시 설명창 나오는 것 추가해야-->
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="qwe">
+            <br />
+            <p style="color: rgb(0, 255, 128);">ABV ~13%</p>
+            <p style="color: rgb(255, 187, 0);">ABV ~25%</p>
+            <p style="font-size: 10px;">(40% Vodka / 70% Vodka)</p>
+            <table
+              class="mytable"
+              style="margin-left: auto; margin-right: auto;"
+            >
+              <thead>
+                <tr>
+                  <th>Ingredient</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vodka(1)</td>
+                </tr>
+                <tr>
+                  <td>Orange Juice(2)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="asd">
+            <p>
+              <br />
+              <strong>orange juice</strong>
+            </p>
+            <div style="padding-top: 10px;">
+              <img
+                alt="Image html"
+                width="90%"
+                height="90%"
+                style="max-height: 500px; max-width: 500px;"
+                src="./Images/orange_juice.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="color: rgb(145, 145, 145);">
+        How was the taste? Remember it! <br />
+        <button
+          type="button"
+          class="btn btn-link"
+          data-toggle="popover"
+          data-content="Based on your liked data, You'll be recommended cocktails."
+          data-placement="top"
+        >
+          Liked
+        </button>
+        <button
+          type="button"
+          class="btn btn-link"
+          data-toggle="popover"
+          data-content="Based on your disliked data, You'll be recommended cocktails."
+          data-placement="top"
+        >
+          Disliked
+        </button>
+      </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover({
+          trigger: "focus",
+        });
+      });
+    </script>
+  </body>
+</html>
